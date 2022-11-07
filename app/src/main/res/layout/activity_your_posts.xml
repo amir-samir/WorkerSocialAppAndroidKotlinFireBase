@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/app_bar_layout">
+
+        <RelativeLayout
+            android:id="@+id/wrappingRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/editProjects_toolbar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_signup_background_full_layout"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/addProject_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    app:title="Your Posts"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/cancel_button_yourProjects"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:layout_marginStart="273dp"
+                        android:src="@android:drawable/btn_dialog" />
+                </androidx.appcompat.widget.Toolbar>
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_your_projects"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/editProjects_toolbar1"
+                android:layout_marginTop="10dp">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+
+</RelativeLayout>

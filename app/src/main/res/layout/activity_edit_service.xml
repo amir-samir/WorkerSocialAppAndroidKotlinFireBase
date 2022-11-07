@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Services.EditService">
+
+    <LinearLayout
+        android:id="@+id/editService_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_signup_background_full_layout"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/cancel_button"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@android:drawable/btn_dialog" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/addPost_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            app:title="Choose Service to edit"
+            app:titleMarginStart="60dp"></androidx.appcompat.widget.Toolbar>
+
+       <!-- <ImageButton
+            android:id="@+id/finishButton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="100dp"
+            android:background="@color/teal_200"
+            android:src="@android:drawable/checkbox_on_background" />-->
+        <!--back button-->
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_edit_services"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editService_toolbar1"
+        android:layout_marginTop="10dp">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

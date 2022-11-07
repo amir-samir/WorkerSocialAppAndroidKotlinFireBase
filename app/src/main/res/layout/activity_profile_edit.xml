@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    tools:context="com.example.handwerkeryarab.ProfileEditActivity">
+
+
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/shape_signup_background_full_layout">
+
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back_white" />
+
+        <!--Title-->
+        <TextView
+            android:id="@+id/toolbarTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Edit Profile"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <!--Shapeable ImageView: profile image-->
+
+        <ImageButton
+            android:id="@+id/updateBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="123dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/toolbarTitleTv"
+            android:background="@drawable/ic_done" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileIv"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/toolbarTitleTv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_person_gray"
+            app:shapeAppearanceOverlay="@style/styleRoundedCornerImage"
+            app:strokeColor="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarRl"
+        android:layout_marginTop="5dp">
+
+        <!--EditText:Input Name-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fullname"
+            app:hintEnabled="true">
+
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_edittext01"
+                android:drawableStart="@drawable/ic_person_gray"
+                android:drawablePadding="10dp"
+                android:inputType="textPersonName|textCapWords"
+                android:textColor="@color/black"
+                android:textColorHint="@color/teal_200" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--EditText:Job-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/jobTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTil"
+            android:layout_marginTop="10dp"
+            android:hint="Job"
+            app:hintEnabled="true">
+
+            <EditText
+                android:id="@+id/jobEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_edittext01"
+                android:drawableStart="@drawable/ic_person_gray"
+                android:drawablePadding="10dp"
+                android:inputType="textPersonName|textCapWords"
+                android:textColor="@color/black"
+                android:textColorHint="@color/teal_200" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--EditText:userType-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/wordPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jobTil"
+            android:layout_marginTop="10dp"
+            android:hint="Work Place"
+            app:hintEnabled="true">
+
+            <EditText
+                android:id="@+id/wordPlaceEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_edittext01"
+                android:drawableStart="@drawable/ic_location_city"
+                android:drawablePadding="10dp"
+                android:inputType="textPersonName|textCapWords"
+                android:textColor="@color/black"
+                android:textColorHint="@color/teal_200" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--EditText:Job-->
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/rea">
+
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            ></com.google.android.gms.maps.MapView>
+
+        <SearchView
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search...."
+            android:iconifiedByDefault="false"
+            android:elevation="5dp"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            />
+
+        <!--  <fragment                                                                                 -->
+        <!--      android:id="@+id/autocomplete_fragment"                                               -->
+        <!--      android:layout_width="match_parent"                                                   -->
+        <!--      android:layout_height="wrap_content"                                                  -->
+        <!--      android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment" -->
+        <!--      />                                                                                    -->
+
+        <ImageButton
+            android:id="@+id/myCurrentLocation"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="355dp"
+            android:background="@color/white"
+            android:src="@drawable/baseline_my_location_gray_600_24dp"
+
+            ></ImageButton>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

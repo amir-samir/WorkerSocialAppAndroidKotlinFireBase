@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HandWerkerYaRab</string>
+    <string name="no_account">Create a new <b>Account</b></string>
+    <string name="already_account">Already have an Acoount ? <b>Log In</b></string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_customer">CustomerActivity</string>
+    <string name="title_activity_chat_customer">ChatActivityCustomer</string>
+    <string name="title_activity_projects">ProjectsActivity</string>
+</resources>

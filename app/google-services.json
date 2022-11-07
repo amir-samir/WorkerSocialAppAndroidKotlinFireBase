@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "234175348429",
+    "firebase_url": "https://menshanalla-54d8e-default-rtdb.firebaseio.com",
+    "project_id": "menshanalla-54d8e",
+    "storage_bucket": "menshanalla-54d8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234175348429:android:9f10b31545632a121db384",
+        "android_client_info": {
+          "package_name": "com.example.menshanalla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234175348429-g0aqt39392v3ddacug2er64meki126k7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.menshanalla",
+            "certificate_hash": "c70af5a2a2caedd2fce304fa14e9510fdadbfedf"
+          }
+        },
+        {
+          "client_id": "234175348429-9h7fcd51l4sv30fv2s520pugs3gqpnfd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBQmwaBZ_MQBeXoiSRSr4eWOQh1CRLtgw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234175348429-9h7fcd51l4sv30fv2s520pugs3gqpnfd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

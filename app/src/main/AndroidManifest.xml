@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.menshanalla">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MenshanAlla"
+        tools:targetApi="31">
+        <activity
+            android:name=".Posts.EditPostsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Posts.YourPostsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Projects.EditProjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Projects.AddProjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Projects.ProjectsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_projects" />
+        <activity
+            android:name=".Services.ChangeService"
+            android:exported="false" />
+        <activity
+            android:name=".Services.EditService"
+            android:exported="false" />
+        <activity
+            android:name=".Services.ServiceActivity"
+            android:exported="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="true" />
+
+        <activity
+            android:name=".Chat.ChatActivityCustomer"
+            android:exported="false"
+            android:label="@string/title_activity_chat_customer" />
+        <activity
+            android:name=".CustomerWorker.CustomerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_customer" />
+        <activity
+            android:name=".Chat.ChatActivity"
+            android:exported="false"
+            android:label="@string/title_activity_chat" />
+        <activity
+            android:name=".Posts.PostsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerWorker.MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDd6mCoEgv5Lq-gPvB1xTjw4E6vqtKT5-o" />
+
+        <activity
+            android:name="com.example.handwerkeryarab.ProfileEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAndSignUp.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.handwerkeryarab.SignUpActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

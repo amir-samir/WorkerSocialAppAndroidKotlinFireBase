@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".homeFragment">
+
+   <com.google.android.material.appbar.AppBarLayout
+       android:id="@+id/app_bar_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/shape_signup_background_full_layout">
+
+       <androidx.appcompat.widget.Toolbar
+           android:id="@+id/home_toolbar"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           app:titleTextColor="@color/white"
+           app:title="Posts of workers you are following"
+           android:background="@null">
+
+       </androidx.appcompat.widget.Toolbar>
+
+   </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_below="@id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="There Are no Posts"
+        android:textColor="@color/black"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_home1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/empty">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
